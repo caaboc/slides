@@ -19,6 +19,34 @@ O conteúdo dentro de uma variável pode ser diversos, mas primordialmente são:
 * Condicional (boolean)
 
 
+Uma linguagem de programação pode definir as variáveis de forma estática ou dinâmica.
+
+É o que chamamos de linguagem fortemente tipada (estática) ou de tipagem dinâmica.
+
+
+# Viajando nas analogias
+
+
+## Tipagem forte (estática)
+
+Imagina que as variáveis são como caixas. Cada caixa tem um temanho diferente e formato diferente. Então podemos imaginar que:
+
+* Números: São caixas quadradas vermelhas, que possuem diferentes tamanhos (dependendo do tipo do número).
+* Textos: São caixas redondas azuis (cilindro), que possuem também diferentes.
+* Condicionais: Seriam caixas triangulares de cores verde, que possue tamanho único.
+
+
+O conteúdo só irá caber em uma determinada caixa. Se seu formato for diferente do formato da caixa, o conteúdo não permanece dentro, portanto, ocasionando um erro no programa.
+
+> "Cada um no seu quadrado."
+
+
+## Tipagem dinâmica
+
+Utilizar tipagem dinâmica é como usar sacolas para guardar coisas. A sacola se molda ao conteúdo dentro dela e a como esse conteúdo está disposto.
+
+Portanto, uma sacola que continha um número dentro, poderá ter agora texto, e a sacola não se limitará ao que irá ser posto dentro dela. Assim, uma sacolá com número, passou a ser uma sacola com texto.
+
 
 ## Números
 
@@ -51,4 +79,15 @@ public static void main () {
     float racional = 1.31231321;
     double racionalGrandao = 4816417289.41823746128349102341;
 }
+```
+
+```php
+<?php
+$sacola = TRUE;     // a boolean
+$sacola  = "foo";   // a string
+$sacola = 'foo';    // a string
+$sacola = 12;       // an integer
+$sacola = 1.0;      // an float
+
+echo gettype($sacola); 
 ```
