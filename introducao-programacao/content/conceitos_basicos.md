@@ -16,7 +16,7 @@ O conteúdo dentro de uma variável pode ser diversos, mas primordialmente são:
 
 * Números
 * Textos
-* Condicional (boolean)
+* Lógico (boolean)
 
 
 Uma linguagem de programação pode definir as variáveis de forma estática ou dinâmica.
@@ -65,7 +65,7 @@ Basicamente (ou que em "90%+" das vezes usará) existem dois tipos de números:
 Java
 
 ```java
-public static void main () {
+public static void main (String[] args) {
     boolean condicional = true;
 
     char letra = "a";
@@ -81,6 +81,31 @@ public static void main () {
 }
 ```
 
+C++
+
+```cpp
+int main () {
+    bool condicional = true;
+    char letra = "a";
+
+    short inteirinho = -1; // pode ser entre -32.768 e 32.767 +-
+    int inteiro = 312312; // pode ser entre -2.147.483.648 e 2.147.483.647.
+    long inteirozao = 132.1231321; // pode ser entre -2.147.483.648 até 2.147.483.647 uma forma explicita de dizer
+
+    unsigned short inteirinho_maior_que_zero = -1; // pode ser entre -32.768 e 32.767 +-
+    unsigned int inteiro_maior_que_zero = 312312; // pode ser entre -2.147.483.648 e 2.147.483.647.
+    unsigned long inteirozao_maior_que_zero = 132.1231321; // pode ser entre -2.147.483.648 até 2.147.483.647 uma forma explicita de dizer
+
+    float racional = 1.31231321;
+    double racional_grandao = 4816417289.41823746128349102341;
+
+} 
+
+```
+
+
+PHP
+
 ```php
 <?php
 $sacola = TRUE;     // a boolean
@@ -88,6 +113,29 @@ $sacola  = "foo";   // a string
 $sacola = 'foo';    // a string
 $sacola = 12;       // an integer
 $sacola = 1.0;      // an float
+```
 
-echo gettype($sacola); 
+
+Javascript
+
+```javascript
+let sacola
+sacola = 10         // inteiro
+sacola = 10.2       // float (racional, ponto flutuante)
+sacola = 'texto'    // texto (string)
+sacola = 't'        // texto (string/letra)
+sacola = false      // lógico (boolean)
+```
+
+
+Python
+
+```python
+sacola = 10         // inteiro
+sacola = 10.2       // float (racional, ponto flutuante)
+sacola = 4+3j       // complex (racional, ponto flutuante)
+sacola = 'texto'    // texto (string)
+sacola = 't'        // texto (string/letra)
+sacola = False      // lógico (boolean)
+
 ```
