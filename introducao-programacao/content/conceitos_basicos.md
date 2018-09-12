@@ -24,7 +24,7 @@ Uma linguagem de programação pode definir as variáveis de forma estática ou 
 É o que chamamos de linguagem fortemente tipada (estática) ou de tipagem dinâmica.
 
 
-# Viajando nas analogias
+# Brincando nas analogias
 
 
 ## Tipagem forte (estática)
@@ -46,6 +46,7 @@ O conteúdo só irá caber em uma determinada caixa. Se seu formato for diferent
 Utilizar tipagem dinâmica é como usar sacolas para guardar coisas. A sacola se molda ao conteúdo dentro dela e a como esse conteúdo está disposto.
 
 Portanto, uma sacola que continha um número dentro, poderá ter agora texto, e a sacola não se limitará ao que irá ser posto dentro dela. Assim, uma sacolá com número, passou a ser uma sacola com texto.
+
 
 
 ## Números
