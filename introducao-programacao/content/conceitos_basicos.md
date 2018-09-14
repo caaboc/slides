@@ -184,6 +184,7 @@ sacola = False      // lógico (boolean)
 * Lógicas
 
 
+
 ## Aritiméticas
 
 Da boa e velha matemática do primário, as 4 operações básicas que serão encontradas em praticamente todas (se não todas) as linguagens:
