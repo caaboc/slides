@@ -1,6 +1,7 @@
 ## Conteitos básicos
 
 * Variáveis
+* Operações
 * Condicionais
 * Laços
 * Funções
@@ -31,10 +32,10 @@ Uma linguagem de programação pode definir as variáveis de forma estática ou 
 
 Imagina que as variáveis são como caixas. Cada caixa tem um temanho diferente e formato diferente, tipo aqueles jogos de encaixar peças geométricas.
 
-<img src="http://www.mabelilivros.com/meusarquivos/312.jpg"></img>
+<img src="http://www.mabelilivros.com/meusarquivos/312.jpg" />
 
 
-Então caixa caixa possui um espaço que só é possível colocar pessas do mesmo formato. Assim:
+Então caixa caixa possui um espaço que só é possível colocar pessas do mesmo formato. Assim, por exemplo:
 
 * Números: São caixas quadradas vermelhas, que possuem diferentes tamanhos (dependendo do tipo do número).
 * Textos: São caixas redondas azuis (cilindro), que possuem também diferentes.
@@ -50,7 +51,10 @@ O conteúdo só irá caber em uma determinada caixa. Se seu formato for diferent
 
 Utilizar tipagem dinâmica é como usar sacolas para guardar coisas. A sacola se molda ao conteúdo dentro dela e a como esse conteúdo está disposto.
 
-Portanto, uma sacola que continha um número dentro, poderá ter agora texto, e a sacola não se limitará ao que irá ser posto dentro dela. Assim, uma sacolá com número, passou a ser uma sacola com texto.
+<img src="https://mamaplasticos.com.br/wp-content/uploads/2018/08/sacola-al%C3%A7a-camiseta-colorida.png" />
+
+
+Portanto, uma sacola que continha um número dentro, poderá ter agora texto, uma função, um objeto, uma classe. A sacola não faz distinção do que entra dentro dela. Ela é reciclável, podendo durar a execução inteira mudando o conteúdo interno.
 
 
 
@@ -62,11 +66,36 @@ Precisamos lembrar de algo que um dia achamos que nunca iriamos usar na vida: `C
 Basicamente (ou que em "90%+" das vezes usará) existem dois tipos de números:
 
 * Inteiros (ex: -1, -2, -1231231, 0, 31231231, 2, 15)
-* Racionais (ex: qualquer coisa com decimal, 1.0, 2.1, 0.13213, -0.123123)
+* Racionais (ex: qualquer coisa com casa decimal, 1.0, 2.1, 0.13213, -0.123123)
 
 
 
-## Exemplos
+## Textos
+
+Variáveis que contém textos, são textos mesmo...
+
+A grande diferença vai ocorrer em linguagens fortemente tipadas (Ex: Java, C++, etc) que vai existir um tipo primitivo `character ou char` e uma lista de caracteres chamadas `Strings`.
+
+Em linguagens dinâmicas não há (necessariamente) essa disntinção explicita.
+
+
+
+## Lógicos
+
+As variáveis lógicas guardam valores binários, `true` ou `false`, podendo haver outros tipos de valores que podem corresponder a um desses dois.
+
+Particularmente, utilizo bastante essas variáveis para simplificar operações lógicas (o que também poderia ser feito com funções/métodos), tornando o código mais legívele entendível.
+
+
+
+## Exemplos de utilização
+
+* Java
+* C++
+* Php
+* Javascript
+* Python
+
 
 Java
 
@@ -146,3 +175,48 @@ sacola = 't'        // texto (string/letra)
 sacola = False      // lógico (boolean)
 
 ```
+
+
+
+## Operações
+
+* Aritméticas
+* Lógicas
+
+
+## Aritiméticas
+
+Da boa e velha matemática do primário, as 4 operações básicas que serão encontradas em praticamente todas (se não todas) as linguagens:
+
+* +: somar
+* -: subtrair
+* *: multiplicar
+* /: dividir
+
+
+Existem outras operações, como potência, resto da divisão, raiz quadrada etc, mas cada linguagem tem sua forma de representar. Sendo as mais comuns:
+
+* **: para potências
+* %: para resto de divizão
+* sqrt(): função que retorna a raíz de um número
+
+
+Lembre-se que, no fim, a matemática básica vai funcionar, então uma potência pode muito tem ser escreita X * X ao invés de X**2
+
+
+Uma boa forma de praticar as operações aritméticas é tentar calcular aquelas fórmulas que "nunca" usaremos na vida.
+
+> raizes de: Y = aX² + bX + c
+> a² = b² + c²
+> IMC = peso / altura²
+> Etc
+
+
+
+## Exemplos
+
+... a ser feito D:
+
+
+
+## Condicionais
