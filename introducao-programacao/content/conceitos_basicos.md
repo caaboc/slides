@@ -29,7 +29,10 @@ Uma linguagem de programação pode definir as variáveis de forma estática ou 
 
 ## Tipagem forte (estática)
 
-Imagina que as variáveis são como caixas. Cada caixa tem um temanho diferente e formato diferente. Então podemos imaginar que:
+Imagina que as variáveis são como caixas. Cada caixa tem um temanho diferente e formato diferente, tipo aqueles jogos de encaixar peças geométricas. Então caixa caixa possui um espaço que só é possível colocar pessas do mesmo formato. Então podemos imaginar que:
+
+<img src="http://www.mabelilivros.com/meusarquivos/312.jpg"></img>
+
 
 * Números: São caixas quadradas vermelhas, que possuem diferentes tamanhos (dependendo do tipo do número).
 * Textos: São caixas redondas azuis (cilindro), que possuem também diferentes.
