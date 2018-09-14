@@ -220,3 +220,35 @@ Uma boa forma de praticar as operações aritméticas é tentar calcular aquelas
 
 
 ## Condicionais
+
+> *"Ser ou não ser, eis a questão..."*
+
+
+Os condicionais e suas operações são responsáveis pelo tratamento dos dados e ou do fluxo do sistema.
+
+
+### Os tipos de operadores
+
+Mais comuns da matemática:
+** >, >= (maior ou igual que), <, <= (menor ou igual que) **
+
+Adicionais:
+** && (E/AND), || (OU/OR) **
+
+
+<table>
+    <thead>
+        <th>Operações</th>
+        <th>Resultado</th>
+    </thead>
+    <tbody>
+        <tr><td> true && true </td><td> true </td></tr>
+        <tr><td> true && false </td><td> false </td></tr>
+        <tr><td> false && true </td><td> false </td></tr>
+        <tr><td> false && false </td><td> false </td></tr>
+        <tr><td> true || true </td><td> true </td></tr>
+        <tr><td> true || false </td><td> true </td></tr>
+        <tr><td> false || true </td><td> true </td></tr>
+        <tr><td> false || false </td><td> false </td></tr>
+    </tbody>
+</table>
