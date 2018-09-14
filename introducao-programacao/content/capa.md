@@ -2,7 +2,7 @@
 
 *Breve, simples e "poliglota"*
 
-> Francisco Thiago <a href="https://thichico.github.io"> @thichico </a>
+> Francisco Thiago [@thichico](https://thichico.github.io)
 
 > fthiagogv@gmail.com
 
