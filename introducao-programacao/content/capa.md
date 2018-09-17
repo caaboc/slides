@@ -1,10 +1,14 @@
 ## Introdução a Programação
 
-*Breve, simples e "poliglota"*
+*Breve, simples e multi-linguagens.*
 
-> Francisco Thiago [@thichico](https://thichico.github.io)
 
-> fthiagogv@gmail.com
+
+Francisco Thiago [@thiichico](https://thiichico.github.io)
+
+* Mestrando em Ciência da Computação na UECE
+* Desenvolvedor Fullstack (desde 2016)
+
 
 
 ## Sumário
