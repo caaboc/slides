@@ -1,10 +1,40 @@
 ## Conteitos básicos
 
+* Lendo e escrevendo
 * Variáveis
 * Operações
 * Condicionais
 * Laços
 * Funções
+
+
+
+## Lendo e escrevendo
+
+Podemos dizer que o conceito mais básico em uma linguagem é a comunicação.
+La lingua falada, o saber ouvir e falar, na linguagem de programação, o saber ler e escrever.
+
+
+Apesar de que, a interação humana nem sempre seja necessária para a leitura e a escrita em um código, todo código tende a receber uma entrada e devolver algum tipo de saída.
+
+
+A exemplo, em uma `página web`, um formulário poderá servir de entrada para o `sistema web`, gerando um usuário cadastrado como saída a `página web` e também poderá gerar uma entrada de dados para o `banco de dados`, que servirá de entrada que armazerá as informações.
+
+
+A forma mais simples de se mandar uma entrada à um código é através das funções de *"ouvir"* que as linguagens têm. Assim como para a escrita.
+
+
+**SPOILLER ALERT!!**
+
+
+Imagina você conversando consigo. O programa também é capaz disso, quando enviamos dados entre as funções/métodos, e esperamos que ele rertorne algo e assim seguir o fluxo.
+
+Pode acontecer também de *"ficar no vácuo"*, tipo quando usamos funções **void** (que retornam nada). Mas, isso são cenas de espisódios posteriores.
+
+
+
+## Exemplos
+
 
 
 
