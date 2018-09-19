@@ -294,6 +294,8 @@ Existem outras operações, como potência, resto da divisão, raiz quadrada etc
 * **: para potências
 * %: para resto de divizão
 * sqrt(): função que retorna a raíz de um número
+* ++: incremento
+* --: decremento
 
 
 Lembre-se que, no fim, a matemática básica vai funcionar, então uma potência pode muito tem ser escreita X * X ao invés de X**2
@@ -301,17 +303,222 @@ Lembre-se que, no fim, a matemática básica vai funcionar, então uma potência
 
 Uma boa forma de praticar as operações aritméticas é tentar calcular aquelas fórmulas que "nunca" usaremos na vida.
 
-> raizes de: Y = aX² + bX + c
-> a² = b² + c²
-> IMC = peso / altura²
-> Etc
+* raizes de: Y = aX² + bX + c
+* a² = b² + c²
+* IMC = peso / altura²
+* Etc
 
 
 
 ## Exemplos
 
-... a ser feito D:
+* Java
+* C++
+* Python
+* Php
 
+
+### JAVA: código
+```java
+public class ArithmeticDemo {
+    public static void main(String[] args) {
+
+        //a few numbers
+        int i = 37;
+        int j = 42;
+        double x = 27.475;
+        double y = 7.22;
+        System.out.println("Variable values...");
+        System.out.println("    i = " + i);
+        System.out.println("    j = " + j);
+        System.out.println("    x = " + x);
+        System.out.println("    y = " + y);
+
+        //adding numbers
+        System.out.println("Adding...");
+        System.out.println("    i + j = " + (i + j));
+        System.out.println("    x + y = " + (x + y));
+
+        //subtracting numbers
+        System.out.println("Subtracting...");
+        System.out.println("    i - j = " + (i - j));
+        System.out.println("    x - y = " + (x - y));
+
+        //multiplying numbers
+        System.out.println("Multiplying...");
+        System.out.println("    i * j = " + (i * j));
+        System.out.println("    x * y = " + (x * y));
+
+        //dividing numbers
+        System.out.println("Dividing...");
+        System.out.println("    i / j = " + (i / j));
+        System.out.println("    x / y = " + (x / y));
+
+        //computing the remainder resulting from dividing numbers
+        System.out.println("Computing the remainder...");
+        System.out.println("    i % j = " + (i % j));
+        System.out.println("    x % y = " + (x % y));
+
+        //mixing types
+        System.out.println("Mixing types...");
+        System.out.println("    j + y = " + (j + y));
+        System.out.println("    i * x = " + (i * x));
+    }
+}
+```
+
+
+### Java: saída
+```java
+Variable values...
+    i = 37
+    j = 42
+    x = 27.475
+    y = 7.22
+Adding...
+    i + j = 79
+    x + y = 34.695
+Subtracting...
+    i - j = -5
+    x - y = 20.255
+Multiplying...
+    i * j = 1554
+    x * y = 198.37
+Dividing...
+    i / j = 0
+    x / y = 3.8054
+Computing the remainder...
+    i % j = 37
+    x % y = 5.815
+Mixing types...
+    j + y = 49.22
+    i * x = 1016.58
+```
+
+
+### C++: Código
+```cpp
+#include <iostream>
+int main()
+{
+  using namespace std;
+  float hats, heads;
+
+  cout.setf(ios_base::fixed, ios_base::floatfield); // fixed-point
+  cout << "Enter a number: ";
+  cin >> hats;
+  cout << "Enter another number: ";
+  cin >> heads;
+
+  cout << "hats = " << hats << "; heads = " << heads << endl;
+  cout << "hats + heads = " << hats + heads << endl;
+  cout << "hats - heads = " << hats - heads << endl;
+  cout << "hats * heads = " << hats * heads << endl;
+  cout << "hats / heads = " << hats / heads << endl;
+  return 0;
+}
+```
+
+
+### C++: saída
+```cpp
+Enter a number: 50.25
+Enter another number: 11.17
+hats = 50.250000; heads = 11.170000
+hats + heads = 61.419998
+hats - heads = 39.080002
+hats * heads = 561.292480
+hats / heads = 4.498657
+```
+
+
+### Python:  código
+```python
+#!/usr/bin/python
+
+a = 21
+b = 10
+c = 0
+
+c = a + b
+print "Line 1 - Value of c is ", c
+
+c = a - b
+print "Line 2 - Value of c is ", c 
+
+c = a * b
+print "Line 3 - Value of c is ", c 
+
+c = a / b
+print "Line 4 - Value of c is ", c 
+
+c = a % b
+print "Line 5 - Value of c is ", c
+
+a = 2
+b = 3
+c = a**b 
+print "Line 6 - Value of c is ", c
+
+a = 10
+b = 5
+c = a//b 
+print "Line 7 - Value of c is ", c
+```
+
+
+### Python: saída
+```python
+Line 1 - Value of c is 31
+Line 2 - Value of c is 11
+Line 3 - Value of c is 210
+Line 4 - Value of c is 2
+Line 5 - Value of c is 1
+Line 6 - Value of c is 8
+Line 7 - Value of c is 2
+```
+
+
+### Php: código
+```php
+<?php
+ $a = 42;
+ $b = 20;
+
+ $c = $a + $b;
+ echo "Addtion Operation Result: $c <br/>";
+
+ $c = $a - $b;
+ echo "Substraction Operation Result: $c <br/>";
+
+ $c = $a * $b;
+ echo "Multiplication Operation Result: $c <br/>";
+
+ $c = $a / $b;
+ echo "Division Operation Result: $c <br/>";
+
+ $c = $a % $b;
+ echo "Modulus Operation Result: $c <br/>";
+
+ $c = $a++; 
+ echo "Increment Operation Result: $c <br/>";
+
+ $c = $a--; 
+ echo "Decrement Operation Result: $c <br/>";
+?>
+```
+
+
+### Php: saída
+```php
+Addtion Operation Result: 62 
+Substraction Operation Result: 22 
+Multiplication Operation Result: 840 
+Division Operation Result: 2.1 
+Modulus Operation Result: 2 
+Increment Operation Result: 42 
+Decrement Operation Result: 43 
+```
 
 
 ## Condicionais
