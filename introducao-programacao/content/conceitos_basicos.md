@@ -102,6 +102,7 @@ int main () {
 ```
 
 
+
 ## Variáveis
 
 > Uma referência para um determinado conteúdo.
@@ -519,6 +520,7 @@ Modulus Operation Result: 2
 Increment Operation Result: 42 
 Decrement Operation Result: 43 
 ```
+
 
 
 ## Condicionais
