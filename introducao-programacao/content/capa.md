@@ -2,6 +2,7 @@
 
 *Breve, simples e multi-linguagens.*
 
+> Slides em progresso...
 
 
 Francisco Thiago [@thiichico](https://thiichico.github.io)
