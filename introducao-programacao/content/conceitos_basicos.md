@@ -36,6 +36,70 @@ Pode acontecer também de *"ficar no vácuo"*, tipo quando usamos funções **vo
 ## Exemplos
 
 
+* Java
+* Python
+* C++
+
+
+Java
+```
+String name = null;
+int number;
+
+java.io.BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+name = in.readLine(); // If the user has not entered anything, assume the default value.
+number = Integer.parseInt(in.readLine()); // It reads only String,and we need to parse it.
+System.out.println("Name " + name + "\t number " + number);
+
+java.util.Scanner sc = new Scanner(System.in).useDelimiter("\\s");
+name = sc.next();  // It will not leave until the user enters data.
+number = sc.nextInt(); // We can read specific data.
+System.out.println("Name " + name + "\t number " + number);
+
+// The Console class is not working in the IDE as expected.
+java.io.Console cnsl = System.console();
+if (cnsl != null) {
+    // Read a line from the user input. The cursor blinks after the specified input.
+    name = cnsl.readLine("Name: ");
+    System.out.println("Name entered: " + name);
+}
+```
+
+
+Python
+```
+# TO read string
+name = raw_input("What is your name? ") 
+
+# TO read number
+age = input("What is your age? ")
+print "Your age is: ", age
+
+```
+
+
+C++
+```
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main () {
+    int n;
+    cin >> n;
+    cout << n;
+    
+    string mystr;
+    cout << "What's your name? ";
+    getline (cin, mystr);
+    cout << "Hello " << mystr << ".\n";
+    cout << "What is your favorite team? ";
+    getline (cin, mystr);
+    cout << "I like " << mystr << " too!\n";
+    
+    return 0;
+}
+```
 
 
 ## Variáveis
