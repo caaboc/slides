@@ -73,9 +73,9 @@
 							Explicar o problema de onde surgiu a necessidade de usá-lo.
 						</aside>
 					</section>
-
+					
 					<section>
-						<h5>Principais funcionalidades</h5>
+						<h5>Algumas funcionalidades</h5>
 						<ul>
 							<li class="fragment fade-in-then-semi-out">Database as a Service by default</li>
 							<li class="fragment fade-in-then-semi-out">Tudo gerenciado via RESTful API</li>
@@ -237,7 +237,7 @@
 
 				<section>
 					<section>
-						<h4>Consultas complexas</h4>
+						<h4>Consultas um pouco mais refinadas</h4>
 						<p>
 							Analogia com SQL
 						</p>
@@ -255,12 +255,6 @@
 									<tr>
 										<td>SELECT campos, aqui</td>
 										<td>"fields": ["campos", "aqui"]</td>
-									</tr>
-									<tr>
-										<td colspan="2" style="text-align: center;">RESTO é IGUAL</td>
-									</tr>
-									<tr>
-										<td colspan="2" style="text-align: center;">EXCETO o JOIN</td>
 									</tr>
 								</tbody>
 							</table>
@@ -297,7 +291,7 @@
 								Crie <strong>índices</strong> para as consultas
 							</li>
 							<li class="fragment fade-in-then-semi-out">
-								Toda consulta com ordenação obrigatoriamente tem <strong>índices</strong>
+								Pra toda consulta com ordenação obrigatoriamente tem <strong>índices</strong>
 							</li>
 							<li class="fragment fade-in-then-semi-out">
 								CRIE ÍNDICES!!!
@@ -322,10 +316,60 @@
 				</section>
 
 				<section>
-					<h3>Obrigado pela atenção</h3>
-					<p>Dúvidas?</p>
+						<h4>Criando um índice</h4>
+						<pre>
+							<code data-noescape data-trim>
+								POST /db/_index HTTP/1.1
+								Content-Type: application/json
+								Host: localhost:5984
+
+								{
+									"index": {
+										"fields": ["foo"]
+									},
+									"name": "foo-index",
+									"ddoc": "foo-index",
+									"type": "json"
+								}
+							</code>
+						</pre>
+						<small><p>A ordem dos fatores alteram o resultado...</p></small>
 				</section>
 
+				<section>
+					<section>
+						<h4>Podemos fazer map reduce!</h4>
+						<small><p>O poder das <strong>views</strong></p></small>
+					</section>
+
+					<section>
+						<pre>
+							<code data-trim>
+								function(doc) {
+									emit(doc._id, 1);
+								}
+							</code>
+						</pre>
+						<p>
+							Reduce:
+							<span style="color: yellow">_sum</span>
+							<span style="color: magenta">_count</span>
+							<span style="color: cyan">_stats</span>
+							<span >custom</span>
+						</p>
+					</section>
+				</section>
+
+
+
+
+
+				<section>
+						<section>
+							<h3>Obrigado pela atenção</h3>
+							<p>Dúvidas?</p>
+						</section>
+					</section>
 			</div>
 
 		</div>
