@@ -3,12 +3,11 @@
 *Breve, simples e multi-linguagens.*
 
 > Slides em progresso...
+> Tudo aqui foi descrito com o intuido de explicar da forma mais simples o ato de programar.
 
 
-Francisco Thiago [@thiichico](https://thiichico.github.io)
+Francisco Thiago [@fthiagngogv](https://fthiagogv.github.io)
 
-* Mestrando em Ciência da Computação na UECE
-* Desenvolvedor Fullstack (desde 2016)
 
 
 
@@ -16,3 +15,4 @@ Francisco Thiago [@thiichico](https://thiichico.github.io)
 
 * Introdução
 * Conceitos básicos
+* ...
