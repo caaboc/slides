@@ -338,15 +338,15 @@
 
 				<section>
 					<section>
-						<h4>Podemos fazer map reduce!</h4>
-						<small><p>O poder das <strong>views</strong></p></small>
+						<h4>O poder das <strong>views</strong></h4>
+						<small>map reduce</small>
 					</section>
 
 					<section>
 						<pre>
 							<code data-trim>
 								function(doc) {
-									emit(doc._id, 1);
+									emit(key, value);
 								}
 							</code>
 						</pre>
@@ -355,14 +355,71 @@
 							<span style="color: yellow">_sum</span>
 							<span style="color: magenta">_count</span>
 							<span style="color: cyan">_stats</span>
-							<span >custom</span>
+							<span style="color: red;">custom</span>
 						</p>
+					</section>
+
+					<section>
+						<h4>Agregações</h4>
+						<pre>
+							<code data-trim>
+								function(doc) {
+									if (doc.collection === "events") {
+										emit([doc._id, 0], null);
+									} 
+									if (doc.collection === "tickets") {
+										emit([doc.eventId, 1], doc._id);
+										if (doc.customerId) {
+											emit(
+												[doc.eventId, 2], 
+												{_id: doc.customerId}
+											);
+										}
+									}
+								}
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<pre>
+							<code data-trim>
+								POST http://$USER:$PASS@localhost:5984/db/_design/ddoc/_view/vw
+								Content-Type: application/json
+								
+								{
+									"queries": [
+										{
+											"startkey": ["0212fc038539f2e18074a8baa2000bf2"],
+											"endkey": ["0212fc038539f2e18074a8baa2000bf2", {}],
+											"include_docs": true,
+											"inclusive_end": true
+										}
+									]
+								}
+							</code>
+						</pre>
 					</section>
 				</section>
 
+				<section>
+					<h4> Se vira nos 30 </h4>
+					<small>Fauxton presentation</small>
+				</section>
 
-
-
+				<section>
+					<pre>
+						<code data-trim>
+							new \GuzzleHttp\Client(
+								[
+									'base_uri' => $host . ':' . $port . '/' . $database . '/',
+									'auth' => [$username, $password],
+									'headers' => ['Content-Type' => 'application/json']
+								]
+							);
+						</code>
+					</pre>
+				</section>
 
 				<section>
 						<section>
@@ -393,7 +450,7 @@
 					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); hljs.configure({tabReplace: '    '}) } },
 					{ src: '../plugin/search/search.js', async: true },
 					{ src: '../plugin/zoom-js/zoom.js', async: true },
 					{ src: '../plugin/notes/notes.js', async: true }
